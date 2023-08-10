@@ -1,0 +1,176 @@
+* {
+    /* background-color: aquamarine; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    color: rgb(255, 227, 14);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 8px;
+}
+
+.navbar .logo {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: aqua;
+}
+
+.menu ul li:hover {
+    background-color: cadetblue;
+    transition: 1.5s ease;
+}
+
+.line {
+    position: absolute;
+    top: 28;
+    right: 60;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22px;
+    width: 32px;
+}
+
+.line .bar {
+    height: 4px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0px 60px;
+}
+
+.content h1 {
+    color: bisque;
+    font-size: 40px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.content p {
+    color: rgb(255, 251, 251);
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.content .btn {
+    margin-top: 20px;
+}
+
+.content .btn a {
+    text-decoration: none;
+    font-size: 20px;
+    color: bisque;
+    display: inline-block;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 14px 25px;
+    letter-spacing: 1.5px;
+
+}
+
+.content .btn a:hover {
+    background-color: black;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width:760px) {
+    line {
+        display: flex;
+        z-index: 2;
+    }
+
+    .menu ul {
+        width: 100%;
+        background-color: lightgreen;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .menu ul li {
+        margin: 10px 0px;
+
+    }
+
+    .menu ul li a {
+        font-size: 19px;
+
+    }
+
+    .navbar .logo {
+        font-size: 30px;
+
+    }
+
+    .content h1 {
+        font-size: 40px;
+
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .content .btn a {
+        font-size: 17px;
+        padding: 9px 15px;
+    }
+}
